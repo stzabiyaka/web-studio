@@ -4,28 +4,33 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: calc(-1 * #{$cards-gap});
+    margin-left: calc(-1 * #{$cards-gap});
+  }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin-top: 0;
   }
 }
 .features__item {
   display: block;
 
-  &:not(:last-child) {
-    margin-bottom: $cards-gap;
+  @media screen and (max-width: ($tablet - 1)) {
+    &:not(:last-child) {
+      margin-bottom: $cards-gap;
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    @include flexBasis(getColumn('features-tablet'));
+    @include gridFlexBasis('features-tablet');
 
-    @include rightGap(getColumn('features-tablet'));
-
-    @include noBottom(getColumn('features-tablet'));
+    margin-left: $cards-gap;
+    margin-top: $cards-gap;
   }
+
   @media screen and (min-width: $desktop) {
-    @include flexBasis(getColumn('features-desktop'));
-
-    @include rightGap(getColumn('features-desktop'));
-
-    @include noBottom(getColumn('features-desktop'));
+    @include gridFlexBasis('features-desktop');
+    margin-top: 0;
   }
 }
 .features__icon {

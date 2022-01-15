@@ -19,13 +19,13 @@
   }
 
   @media screen and (min-width: $tablet) {
-    flex-basis: calc(100% / #{getColumn('product-set-tablet')} - #{$cards-gap});
+    @include gridFlexBasis('product-set-tablet');
 
     margin-left: $cards-gap;
     margin-top: $cards-gap;
   }
 
   @media screen and (min-width: $desktop) {
-    flex-basis: calc(100% / #{getColumn('product-set-desktop')} - #{$cards-gap});
+    @include gridFlexBasis('product-set-desktop');
   }
 }

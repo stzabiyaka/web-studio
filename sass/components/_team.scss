@@ -4,6 +4,13 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: calc(-1 * #{$cards-gap});
+    margin-left: calc(-1 * #{$cards-gap});
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin-top: 0;
   }
 }
 
@@ -16,23 +23,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  &:not(:last-child) {
-    margin-bottom: $cards-gap;
+  @media screen and (max-width: ($tablet - 1)) {
+    &:not(:last-child) {
+      margin-bottom: $cards-gap;
+    }
   }
 
   @media screen and (min-width: $tablet) {
-    @include flexBasis(getColumn('team-tablet'));
+    @include gridFlexBasis('team-tablet');
 
-    @include rightGap(getColumn('team-tablet'));
-
-    @include noBottom(getColumn('team-tablet'));
+    margin-left: $cards-gap;
+    margin-top: $cards-gap;
   }
+
   @media screen and (min-width: $desktop) {
-    @include flexBasis(getColumn('team-desktop'));
-
-    @include rightGap(getColumn('team-desktop'));
-
-    @include noBottom(getColumn('team-desktop'));
+    @include gridFlexBasis('team-desktop');
+    margin-top: 0;
   }
 }
 

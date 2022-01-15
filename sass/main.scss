@@ -9,15 +9,15 @@
 // drop styles
 @import './base/drop-styles';
 // body component
-@import './components/body';
+@import './layout/body';
 // container componet
-@import './components/container';
+@import './layout/container';
 // section component
-@import './components/section';
+@import './layout/section';
 // button component
 @import './components/button';
 // header section
-@import './components/header';
+@import './layout/header';
 // logo component
 @import './components/logo';
 // menu component
@@ -49,6 +49,6 @@
 // product component
 @import './components/product';
 // footer section
-@import './components/footer';
+@import './layout/footer';
 // subscription form component
 @import './components/subscription-form';

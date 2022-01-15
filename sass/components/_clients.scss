@@ -2,30 +2,31 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
+  margin-top: calc(-1 * #{$cards-gap});
+  margin-left: calc(-1 * #{$cards-gap});
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
 }
 .clients__item {
-  margin-bottom: $cards-gap;
+  @include gridFlexBasis('clients-mobile');
 
-  @include flexBasis(getColumn('clients-mobile'));
-
-  @include rightGap(getColumn('clients-mobile'));
-
-  @include noBottom(getColumn('clients-mobile'));
+  margin-left: $cards-gap;
+  margin-top: $cards-gap;
 
   @media screen and (min-width: $tablet) {
-    @include flexBasis(getColumn('clients-tablet'));
+    @include gridFlexBasis('clients-tablet');
 
-    @include rightGap(getColumn('clients-tablet'));
-
-    @include noBottom(getColumn('clients-tablet'));
+    margin-left: $cards-gap;
+    margin-top: $cards-gap;
   }
 
   @media screen and (min-width: $desktop) {
-    @include flexBasis(getColumn('clients-desktop'));
-
-    @include rightGap(getColumn('clients-desktop'));
-
-    @include noBottom(getColumn('clients-desktop'));
+    @include gridFlexBasis('clients-desktop');
+    margin-top: 0;
   }
 }
 
