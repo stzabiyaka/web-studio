@@ -1,0 +1,11 @@
+body {
+  background-color: getColor('white-primary');
+  color: getColor('text-primary');
+  font-family: $fontPrimary;
+  letter-spacing: 0.03em;
+
+  &.modal-open,
+  &.menu-open {
+    overflow: hidden;
+  }
+}

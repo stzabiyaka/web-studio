@@ -1,0 +1,61 @@
+.hero {
+  $color-gradient: rgba(47, 48, 58, 0.4);
+  $image-gradient: linear-gradient(to right, $color-gradient, $color-gradient);
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // height: 400px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  background-color: #c4c4c4;
+  background-image: $image-gradient, url('../images/hero-background-480.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: $image-gradient, url('../images/hero-background-480@2x.jpg');
+  }
+
+  @media screen and (min-width: ($mobile + 1)) {
+    max-width: 768px;
+    background-image: $image-gradient, url('../images/hero-background-768.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: $image-gradient, url('../images/hero-background-768@2x.jpg');
+    }
+  }
+  @media screen and (min-width: ($tablet + 1)) {
+    max-width: 1600px;
+    background-image: $image-gradient, url('../images/hero-background-1600.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: $image-gradient, url('../images/hero-background-1600@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+.hero__title {
+  margin-bottom: 30px;
+
+  color: getColor('white-primary');
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

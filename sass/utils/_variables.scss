@@ -1,0 +1,43 @@
+// site colors palette
+$colors: (
+  'white-primary': #ffffff,
+  'white-secondary': rgba(255, 255, 255, 0.6),
+  'background-secondary': #f5f4fa,
+  'background-dark': #2f303a,
+  'text-primary': #757575,
+  'text-title': #212121,
+  'accent': #2196f3,
+  'icon': #afb1b8,
+);
+
+// site fonts
+$fontPrimary: 'Roboto', sans-serif;
+$fontLogo: 'Raleway', sans-serif;
+
+// transitions duration and timing
+$transitions: (
+  'duration': 250ms,
+  'timing': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+// gaps between cards size
+$cards-gap: 30px;
+
+// grids columns quantity
+$columns: (
+  'features-tablet': 2,
+  'features-desktop': 4,
+  'specialisation': 3,
+  'team-desktop': 4,
+  'team-tablet': 2,
+  'clients-mobile': 2,
+  'clients-tablet': 3,
+  'clients-desktop': 6,
+  'product-set-tablet': 2,
+  'product-set-desktop': 3,
+);
+
+// breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

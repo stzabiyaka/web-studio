@@ -1,0 +1,45 @@
+.logo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  color: getColor('text-title');
+  font-family: $fontLogo;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+
+  &:focus {
+    outline: getColor('accent') solid 1px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+
+    font-size: 26px;
+    line-height: 1.17;
+  }
+
+  &--inverse {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    color: getColor('white-primary');
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  &--accent {
+    color: getColor('accent');
+  }
+}

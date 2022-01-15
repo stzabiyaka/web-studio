@@ -1,0 +1,39 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--team {
+    background-color: getColor('background-secondary');
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--specialisation {
+    display: none;
+    padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+}
+
+.section__title {
+  margin-bottom: 30px;
+
+  color: getColor('text-title');
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}

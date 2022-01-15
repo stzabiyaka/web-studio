@@ -1,0 +1,147 @@
+.form {
+  display: block;
+}
+.form__field {
+  position: relative;
+
+  display: block;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+
+  &--textarea {
+    margin-bottom: 20px;
+  }
+
+  &--checkbox {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &:focus-within {
+    > .form__input,
+    > .form__icon {
+      fill: getColor('accent');
+      border-color: getColor('accent');
+      outline: none;
+    }
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
+
+  color: inherit;
+  background-color: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  @include transitionProperties();
+
+  &--textarea {
+    height: 120px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    resize: none;
+  }
+
+  &--textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 21px;
+  left: 12px;
+
+  fill: getColor('text-title');
+
+  transform: translateY(50%);
+  transition-property: fill;
+  @include transitionProperties();
+}
+.form__input-checkbox {
+  &--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+.form__label-checkbox {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.form__icon-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 15px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+
+  color: transparent;
+  border: 2px solid getColor('text-title');
+  border-radius: 2px;
+  box-shadow: none;
+  fill: currentColor;
+  stroke: currentColor;
+
+  transition-property: color border-color background-color box-shadow;
+  @include transitionProperties();
+
+  .form__input-checkbox:checked + & {
+    color: getColor('white-primary');
+    border-color: transparent;
+    background-color: getColor('accent');
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 8px;
+  }
+}
+
+.agreement-link {
+  display: inline-block;
+  color: getColor('accent');
+  text-decoration: underline;
+}

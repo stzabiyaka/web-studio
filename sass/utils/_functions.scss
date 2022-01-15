@@ -1,0 +1,14 @@
+// color selector
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+// transitions duration and timing selector
+@function getTransition($key) {
+  @return map-get($transitions, $key);
+}
+
+// grids columns quantity selector
+@function getColumn($key) {
+  @return map-get($columns, $key);
+}

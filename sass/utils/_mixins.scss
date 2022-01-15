@@ -1,0 +1,28 @@
+// flex-basis calculation
+@mixin flexBasis($column) {
+  flex-basis: calc((100% - #{$cards-gap * ($column - 1)}) / #{$column});
+}
+
+// transition properties
+@mixin transitionProperties($duration: 'duration', $timing: 'timing') {
+  transition-duration: getTransition($duration);
+  transition-timing-function: getTransition($timing);
+}
+
+// margin-right gaps
+@mixin rightGap($column, $gap: $cards-gap) {
+  &:not(:nth-child(#{$column}n)) {
+    margin-right: $gap;
+  }
+  &:nth-child(#{$column}n),
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// margim-bottom - null
+@mixin noBottom($column) {
+  &:nth-last-child(-n + #{$column}) {
+    margin-bottom: 0;
+  }
+}

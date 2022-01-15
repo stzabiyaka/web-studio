@@ -1,0 +1,91 @@
+.menu {
+  display: none;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  z-index: 990;
+
+  background-color: getColor('white-primary');
+
+  @media screen and (max-width: ($tablet - 1)) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.menu__button {
+  display: inline-flex;
+
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  z-index: 991;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: getColor('text-title');
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu__icon {
+  fill: currentColor;
+
+  transition-property: color;
+  @include transitionProperties();
+
+  &--menu {
+    display: block;
+
+    .menu__button.is-open & {
+      display: none;
+    }
+  }
+
+  &--close {
+    display: none;
+
+    .menu__button.is-open & {
+      display: block;
+    }
+  }
+
+  .menu__button:hover &,
+  .menu__button:focus & {
+    color: getColor('accent');
+  }
+}

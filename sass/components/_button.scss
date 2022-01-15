@@ -1,0 +1,47 @@
+.button {
+  $padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  padding-left: $padding;
+  padding-right: $padding;
+
+  color: getColor('white-primary');
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  cursor: pointer;
+  background-color: getColor('accent');
+  border: 1px transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+  }
+}
+
+.button__icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+
+  &--append {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,109 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  visibility: visible;
+  opacity: 1;
+
+  z-index: 999;
+
+  transition-property: opacity, visibility;
+  @include transitionProperties();
+
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  @media screen and (max-height: 608px) {
+    overflow-y: scroll;
+  }
+}
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
+
+  background-color: getColor('white-primary');
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition-property: transform;
+  @include transitionProperties();
+
+  .modal-backdrop.is-hidden > & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  @media screen and (max-height: 608px) {
+    top: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
+}
+
+.modal-container__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  color: getColor('text-title');
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:focus {
+    outline: none;
+  }
+}
+.modal-container__icon {
+  fill: currentColor;
+
+  transition-property: color, transform;
+  @include transitionProperties();
+
+  .modal-container__button:hover &,
+  .modal-container__button:focus & {
+    color: getColor('accent');
+    transform: rotateZ(360deg);
+  }
+}
+.modal-container__title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: getColor('text-title');
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
+}

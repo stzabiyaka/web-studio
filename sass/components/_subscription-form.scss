@@ -1,0 +1,52 @@
+.form-subscription {
+  display: block;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+.form-subscription__input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin-left: 0;
+
+  color: getColor('white-primary');
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition-property: border-color;
+  @include transitionProperties();
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: getColor('white-secondary');
+  }
+  &:focus-within {
+    border-color: getColor('accent');
+    outline: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 12px;
+
+    width: 358px;
+  }
+}
