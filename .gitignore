@@ -105,3 +105,6 @@ dist
 
 # VSCode files
 .vscode
+
+# Prettier file
+.prettierrc.json
