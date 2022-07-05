@@ -6,7 +6,18 @@
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', onCloseModal);
+
+  function onCloseModal(event) {
+    if (
+      event.target === event.currentTarget ||
+      event.target === refs.closeModalBtn ||
+      event.target.parentElement === refs.closeModalBtn ||
+      event.target.parentElement.parentElement === refs.closeModalBtn
+    ) {
+      toggleModal();
+    }
+  }
 
   function toggleModal() {
     document.body.classList.toggle('modal-open');

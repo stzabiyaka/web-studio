@@ -1,6 +1,6 @@
 // flex-basis calculation
 @mixin flexBasis($column) {
-  flex-basis: calc((100% - #{$cards-gap * (#{getColumn($column)} - 1)}) / #{$column});
+  flex-basis: calc((100% - #{$cards-gap} * (#{getColumn($column)} - 1)) / #{$column});
 }
 
 @mixin gridFlexBasis($column) {

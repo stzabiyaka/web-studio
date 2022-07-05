@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Контакти вебстудії" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Контакти</title>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <div class="header__content container">
+        <a class="logo" href="./index.html" title="На главную"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu__icon menu__icon--menu" href="./images/icons.svg#icon-menu"></use>
+            <use
+              class="menu__icon menu__icon--close"
+              href="./images/icons.svg#icon-menu-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" id="mobile-menu" data-menu>
+          <nav>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current" href="./contacts.html"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon contacts__icon--mail">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icon contacts__icon--phone">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="social social--text">
+            <li class="social__item social__item--text">
+              <a href="#" class="social__link-text" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="social__item social__item--text">
+              <a href="#" class="social__link-text" rel="noopener noreferrer nofollow">Twitter </a>
+            </li>
+            <li class="social__item social__item--text">
+              <a href="#" class="social__link-text" rel="noopener noreferrer nofollow">Facebook</a>
+            </li>
+            <li class="social__item social__item--text">
+              <a href="#" class="social__link-text" rel="noopener noreferrer nofollow">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- products section-->
+
+      <section class="section">
+        <div class="container">
+          <iframe
+            class="contacts__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794497406567!2d30.5383858!3d50.426580699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1657044132062!5m2!1sru!2sua"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <ul class="contacts-address">
+            <li class="contacts-address__item">м. Київ, б-р Лесі Українки, 26</li>
+            <li class="contacts-address__item">
+              <a class="contacts-address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+            <li class="contacts-address__item">
+              <a class="contacts-address__link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer__content container">
+        <div>
+          <a class="logo logo--inverse" href="./index.html" title="На главную" lang="en"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+          <address>
+            <ul class="address">
+              <li class="address__item">
+                <a
+                  class="contacts__link contacts__link--semitransparent contacts__link--white"
+                  href="#"
+                  >м. Київ, б-р Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="contacts__link contacts__link--semitransparent"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="contacts__link contacts__link--semitransparent" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__social-container">
+          <p class="footer__title">приєднуйтесь</p>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--white"
+                aria-label="Instagram"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--white"
+                aria-label="Twitter"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--white"
+                aria-label="Facebook"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link social__link--white"
+                aria-label="LinkedIn"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscription-container">
+          <p class="footer__title">Підпишиться на розсилку</p>
+          <form class="form-subscription" name="form-email-input">
+            <label for="subscription-email"></label>
+            <input
+              class="form-subscription__input"
+              name="email-subscription-input"
+              type="email"
+              placeholder="E-mail"
+              id="subscription-email"
+              autocomplete="email"
+            />
+            <button class="button" type="submit">
+              Підписатись<span class="button__icon button__icon--append">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile menu script link -->
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
