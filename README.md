@@ -1,2 +1,5 @@
 # goit-markup-final
-goit markup project 1
+
+goit markup project
+
+Stack of technologies: HTML, CSS, Javacript

@@ -31,8 +31,8 @@
   }
 
   function showOnly({ name }) {
-    classToggle({ name: name });
-    buttonToggle({ name: name });
+    classToggle({ name });
+    buttonToggle({ name });
   }
 
   function classToggle({ name }) {
