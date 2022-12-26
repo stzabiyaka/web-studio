@@ -65,7 +65,7 @@
     resize: none;
   }
 
-  &--textarea::placeholder {
+  &::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-size: 14px;
     line-height: 1.14;

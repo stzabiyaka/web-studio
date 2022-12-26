@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <meta name="description" content="Вебстудія, м. Київ" />
+    <meta name="description" content="WebStudio, Kyiv, Ukraine" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,14 +13,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Студія</title>
+    <title>Studio</title>
   </head>
   <body>
     <!-- header -->
 
     <header class="header">
       <div class="header__content container">
-        <a class="logo" href="./index.html" title="На головну"
+        <a class="logo" href="./index.html" title="Home"
           ><span class="logo--accent">Web</span>Studio</a
         >
         <button
@@ -30,7 +30,7 @@
           aria-controls="mobile-menu"
           data-menu-button
         >
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <svg width="40" height="40" aria-label="Mobile menu switch>
             <use class="menu__icon menu__icon--menu" href="./images/icons.svg#icon-menu"></use>
             <use
               class="menu__icon menu__icon--close"
@@ -42,13 +42,13 @@
           <nav>
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a>
+                <a class="site-nav__link site-nav__link--current" href="./index.html">Studio</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+                <a class="site-nav__link" href="./portfolio.html">Portfolio</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href="./contacts.html">Контакти</a>
+                <a class="site-nav__link" href="./contacts.html">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -92,8 +92,8 @@
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення<br />для вашого бізнесу</h1>
-          <button class="button" type="button" data-modal-open>Замовити послугу</button>
+          <h1 class="hero__title">Effective solutions<br />for your business</h1>
+          <button class="button" type="button" data-modal-open>Order a service</button>
         </div>
       </section>
 
@@ -101,60 +101,63 @@
 
       <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal-container">
-          <button class="modal-container__button" title="Закрити форму" data-modal-close>
+          <button class="modal-container__button" title="Close form" data-modal-close>
             <svg class="modal-container__icon" width="11" height="11">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <p class="modal-container__title">Залишіть свої дані, ми вам зателефонуємо</p>
+          <p class="modal-container__title">Leave your contact data, we call you back</p>
           <form class="form" name="modal-form">
             <div class="form__field">
-              <label class="form__label" for="user-name">Ім'я</label>
+              <label class="form__label" for="user-name">Name</label>
               <input
                 class="form__input"
                 type="text"
                 name="user-name"
                 id="user-name"
                 autocomplete="off"
+                placeholder="Name"
               />
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
             <div class="form__field">
-              <label class="form__label" for="user-tel">Телефон</label>
+              <label class="form__label" for="user-tel">Phone</label>
               <input
                 class="form__input"
                 type="tel"
                 name="user-tel"
                 id="user-tel"
                 autocomplete="off"
+                placeholder="Phone"
               />
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
             <div class="form__field">
-              <label class="form__label" for="user-email">Пошта</label>
+              <label class="form__label" for="user-email">Email</label>
               <input
                 class="form__input"
                 type="email"
                 name="user-email"
                 id="user-email"
                 autocomplete="email"
+                placeholder="Email"
               />
               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
             <div class="form__field form__field--textarea">
-              <label class="form__label" for="user-comment">Коментар</label>
+              <label class="form__label" for="user-comment">Comment</label>
               <textarea
                 class="form__input form__input--textarea"
                 name="user-comment"
                 id="user-comment"
                 autocomplete="off"
-                placeholder="Введите текст"
+                placeholder="Enter text"
               ></textarea>
             </div>
             <div class="form__field form__field--checkbox">
@@ -166,15 +169,15 @@
                 /><span class="form__icon-checkbox">
                   <svg width="13" height="10">
                     <use href="./images/icons.svg#icon-checked"></use></svg></span
-                >Погоджуюсь із розсилкою та приймаю&nbsp;<a
+                >I agree to subscribe and accept&nbsp;<a
                   class="agreement-link"
                   target="blank"
                   href="#"
-                  >Умови угоди</a
+                  >Terms of Agreement</a
                 >
               </label>
             </div>
-            <button class="button" type="submit">Відправити</button>
+            <button class="button" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -190,9 +193,9 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Уважність до деталей</h3>
+              <h3 class="features__title">Attention to details</h3>
               <p class="features__text">
-                Ідейні міркування, а також початок повсякденої роботи з формування позиції.
+                Creation of the Idea, and start of everyday work on the Concept.
               </p>
             </li>
             <li class="features__item">
@@ -201,9 +204,9 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальність</h3>
+              <h3 class="features__title">Punctuality</h3>
               <p class="features__text">
-                Завдання організації, особливо ж рамки та місце навчання кадрів тягне за собою.
+                All required tasks are completed before or at a previously designated time.
               </p>
             </li>
             <li class="features__item">
@@ -212,9 +215,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планування</h3>
+              <h3 class="features__title">Planning</h3>
               <p class="features__text">
-                Рівним чином консультація із широким активом в значній мірі обумовлює.
+                The process of development begins from the planning of all the details and terms.
               </p>
             </li>
             <li class="features__item">
@@ -223,9 +226,9 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Сучасні технології</h3>
+              <h3 class="features__title">Modern technologies</h3>
               <p class="features__text">
-                Значущість цих проблем настільки очевидна, що реалізація планових завдань.
+                Efficiency and speed, empowering you by giving you more control to the service you receive.
               </p>
             </li>
           </ul>
@@ -236,7 +239,7 @@
 
       <section class="section section--specialisation">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємось</h2>
+          <h2 class="section__title">What do we develop</h2>
           <ul class="specialisation">
             <li class="specialisation__item">
               <picture>
@@ -259,11 +262,11 @@
                 <img
                   src="./images/specialisation-001-370.jpg"
                   loading="lazy"
-                  alt="монитор, клавіатура та планшет на столі"
+                  alt="monitor, keyboard and tablet on a desktop"
                 />
               </picture>
               <div class="specialisation__text-container">
-                <p class="specialisation__text">Десктопні застосунки</p>
+                <p class="specialisation__text">Desktop applications</p>
               </div>
             </li>
             <li class="specialisation__item">
@@ -287,11 +290,11 @@
                 <img
                   src="./images/specialisation-002-370.jpg"
                   loading="lazy"
-                  alt="монитор, ноутбук на столі та смартфон у руці"
+                  alt="monitor, laptop on a desktop and a smartphone in a palm"
                 />
               </picture>
               <div class="specialisation__text-container">
-                <p class="specialisation__text">Мобільні застосунки</p>
+                <p class="specialisation__text">Mobile applications</p>
               </div>
             </li>
             <li class="specialisation__item">
@@ -315,11 +318,11 @@
                 <img
                   src="./images/specialisation-003-370.jpg"
                   loading="lazy"
-                  alt="монитор на столі, планшет та стилус у руках"
+                  alt="monitor on a desktop, tablet and a stylus in hands"
                 />
               </picture>
               <div class="specialisation__text-container">
-                <p class="specialisation__text">Дизайнерські рішення</p>
+                <p class="specialisation__text">Design solutions</p>
               </div>
             </li>
           </ul>
@@ -330,7 +333,7 @@
 
       <section class="section section--team">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title">Our team</h2>
           <ul class="team">
             <li class="team__item">
               <picture>
@@ -388,11 +391,11 @@
                 <img
                   src="./images/team-product-designer-450.jpg"
                   loading="lazy"
-                  alt="Ігор Дем'яненко"
+                  alt="Igor Demyanenko"
                 />
               </picture>
               <div class="team__meta">
-                <h3 class="team__title">Ігор Дем'яненко</h3>
+                <h3 class="team__title">Igor Demyanenko</h3>
                 <p class="team__description" lang="en">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -502,11 +505,11 @@
                 <img
                   src="./images/team-frontend-developer-450.jpg"
                   loading="lazy"
-                  alt="Ольга Репіна"
+                  alt="Olga Repina"
                 />
               </picture>
               <div class="team__meta">
-                <h3 class="team__title">Ольга Репіна</h3>
+                <h3 class="team__title">Olga Repina</h3>
                 <p class="team__description" lang="en">Frontend Developer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -613,10 +616,10 @@
                   media="(min-width: 1200px)"
                   sizes="270px"
                 />
-                <img src="./images/team-marketing-450.jpg" loading="lazy" alt="Микола Тарасов" />
+                <img src="./images/team-marketing-450.jpg" loading="lazy" alt="Mykola Tarasov" />
               </picture>
               <div class="team__meta">
-                <h3 class="team__title">Микола Тарасов</h3>
+                <h3 class="team__title">Mykola Tarasov</h3>
                 <p class="team__description" lang="en">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
@@ -723,10 +726,10 @@
                   media="(min-width: 1200px)"
                   sizes="270px"
                 />
-                <img src="./images/team-ui-designer-450.jpg" loading="lazy" alt="Михайло Єрмаков" />
+                <img src="./images/team-ui-designer-450.jpg" loading="lazy" alt="Mykhailo Yermakov" />
               </picture>
               <div class="team__meta">
-                <h3 class="team__title">Михайло Єрмаков</h3>
+                <h3 class="team__title">Mykhailo Yermakov</h3>
                 <p class="team__description" lang="en">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -788,13 +791,13 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Постійні клієнти</h2>
+          <h2 class="section__title">Our clients</h2>
           <ul class="clients">
             <li class="clients__item">
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клієнт 1"
+                aria-label="Client #1"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -806,7 +809,7 @@
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клієнт 2"
+                aria-label="Client #2"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -818,7 +821,7 @@
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клиієт 3"
+                aria-label="Client #3"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -829,7 +832,7 @@
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клієнт 4"
+                aria-label="Client #4"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -841,7 +844,7 @@
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клієнт 5"
+                aria-label="Client #5"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -853,7 +856,7 @@
               <a
                 href="#"
                 class="clients__link"
-                aria-label="Клієнт 6"
+                aria-label="Client #6"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="clients__icon" width="106" height="60">
@@ -871,7 +874,7 @@
     <footer class="footer">
       <div class="footer__content container">
         <div>
-          <a class="logo logo--inverse" href="./index.html" title="На головну"
+          <a class="logo logo--inverse" href="./index.html" title="Home"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <address>
@@ -880,7 +883,7 @@
                 <a
                   class="contacts__link contacts__link--semitransparent contacts__link--white"
                   href="#"
-                  >м. Київ, б-р Лесі Українки, 26</a
+                  >Lesi Ukrainky Blvd, 26, Kyiv, Ukraine</a
                 >
               </li>
               <li class="address__item">
@@ -899,7 +902,7 @@
           </address>
         </div>
         <div class="footer__social-container">
-          <p class="footer__title">приєднуйтесь</p>
+          <p class="footer__title">join us</p>
           <ul class="social">
             <li class="social__item">
               <a
@@ -952,7 +955,7 @@
           </ul>
         </div>
         <div class="footer__subscription-container">
-          <p class="footer__title">Підпишіться на розсилку</p>
+          <p class="footer__title">Subscribe to our newsletter</p>
           <form class="form-subscription" name="form-email-input">
             <label for="subscription-email"></label>
             <input
@@ -964,7 +967,7 @@
               autocomplete="email"
             />
             <button class="button" type="submit">
-              Підписатись<span class="button__icon button__icon--append">
+              Subscribe<span class="button__icon button__icon--append">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
