@@ -1,5 +1,3 @@
-# goit-markup-final
+# Webstudio project
 
-goit markup project
-
-Stack of technologies: HTML, CSS, Javacript
+Training frontend project - Website for web studio, developed using HTML5, CSS3, SCSS, responsive layout
